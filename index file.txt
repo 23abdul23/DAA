@@ -209,3 +209,31 @@ Question: Assignment 2 Question 12 - Local minimum in a complete binary tree
 54. 54_a2_q13_median_two_databases.cpp
 Old name: New file
 Question: Assignment 2 Question 13 - Median from two databases using kth-smallest queries
+
+55. 55_a3_q2_job_scheduling_release_deadlines.cpp
+Old name: New file
+Question: Assignment 3 Question 2 - Job scheduling with release times and deadlines
+
+56. 56_a3_q3_gas_station_refueling.cpp
+Old name: New file
+Question: Assignment 3 Question 3 - Gas station refueling strategy
+
+57. 57_a3_q4_minimum_unit_interval_cover.cpp
+Old name: New file
+Question: Assignment 3 Question 4 - Minimum unit interval cover
+
+58. 58_a3_q5_unbounded_knapsack.cpp
+Old name: New file
+Question: Assignment 3 Question 5 - Integer knapsack with duplicate items allowed
+
+59. 59_a3_q6_box_stacking.cpp
+Old name: New file
+Question: Assignment 3 Question 6 - Box stacking
+
+60. 60_a3_q7_optimal_coin_game.cpp
+Old name: New file
+Question: Assignment 3 Question 7 - Optimal strategy for a game
+
+61. 61_a3_q8_two_person_city_traversal.cpp
+Old name: New file
+Question: Assignment 3 Question 8 - Two-person traversal of cities
