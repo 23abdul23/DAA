@@ -6,7 +6,7 @@ Idea Used: Visit positions 1, -2, 4, -8, ... so the search range doubles each ti
 #include <bits/stdc++.h>
 using namespace std;
 
-static bool crosses(long long left, long long right, long long target) {
+bool crosses(long long left, long long right, long long target) {
     return min(left, right) <= target && target <= max(left, right);
 }
 

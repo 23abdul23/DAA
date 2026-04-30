@@ -6,44 +6,46 @@ Idea Used: Use the partition-based median algorithm to split both arrays so the 
 #include <bits/stdc++.h>
 using namespace std;
 
-double medianTwoSortedArrays(const vector<int>& a, const vector<int>& b) {
-    const vector<int> *x = &a, *y = &b;
-    if (a.size() > b.size()) swap(x, y);
+double findMedian(vector<int>& A, vector<int>& B) {
+    if (A.size() > B.size()) return findMedian(B, A); // ensure A is smaller
 
-    int n = static_cast<int>(x->size());
-    int m = static_cast<int>(y->size());
-    int leftSize = (n + m + 1) / 2;
-
+    int n = A.size(), m = B.size();
     int low = 0, high = n;
+
     while (low <= high) {
-        int cutX = low + (high - low) / 2;
-        int cutY = leftSize - cutX;
+        int cutA = (low + high) / 2;
+        int cutB = (n + m + 1) / 2 - cutA;
 
-        int leftX = (cutX == 0) ? INT_MIN : (*x)[cutX - 1];
-        int leftY = (cutY == 0) ? INT_MIN : (*y)[cutY - 1];
-        
-        int rightX = (cutX == n) ? INT_MAX : (*x)[cutX];
-        int rightY = (cutY == m) ? INT_MAX : (*y)[cutY];
+        int l1 = (cutA == 0) ? INT_MIN : A[cutA - 1];
+        int l2 = (cutB == 0) ? INT_MIN : B[cutB - 1];
 
-        if (leftX <= rightY && leftY <= rightX) {
-            if ((n + m) % 2 == 0) {
-                return (max(leftX, leftY) + min(rightX, rightY)) / 2.0;
-            }
-            return static_cast<double>(max(leftX, leftY));
+        int r1 = (cutA == n) ? INT_MAX : A[cutA];
+        int r2 = (cutB == m) ? INT_MAX : B[cutB];
+
+        // correct partition
+        if (l1 <= r2 && l2 <= r1) {
+            if ((n + m) % 2 == 0)
+                return (max(l1, l2) + min(r1, r2)) / 2.0;
+            else
+                return max(l1, l2);
         }
 
-        if (leftX > rightY) high = cutX - 1;
-        else low = cutX + 1;
+        else if (l1 > r2)
+            high = cutA - 1;
+        else
+            low = cutA + 1;
     }
-    return 0.0;
+
+    return 0;
 }
 
 int main() {
-    int n;
-    cin >> n;
-    vector<int> a(n), b(n);
-    for (int i = 0; i < n; i++) cin >> a[i];
-    for (int i = 0; i < n; i++) cin >> b[i];
-    cout << fixed << setprecision(1) << medianTwoSortedArrays(a, b) << "\n";
-    return 0;
+    int n, m;
+    cin >> n >> m;
+
+    vector<int> A(n), B(m);
+    for (int i = 0; i < n; i++) cin >> A[i];
+    for (int i = 0; i < m; i++) cin >> B[i];
+
+    cout << fixed << setprecision(2) << findMedian(A, B);
 }

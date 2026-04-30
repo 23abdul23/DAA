@@ -27,9 +27,8 @@ int solve(vector<int> &arr, vector<vector<long long>> &dp, int i, int j){
 
 		ans = min(ans, cost);
 	}
-	dp[i][j] = ans;
 
-	return ans;
+	return dp[i][j] = ans;
 }
 
 int main(){

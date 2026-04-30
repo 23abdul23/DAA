@@ -6,45 +6,47 @@ Idea Used: The best f is floor(total land / n); for a chosen f, binary search th
 #include <bits/stdc++.h>
 using namespace std;
 
-static long long deficitForF(const vector<long long>& a, long long f) {
-    long long deficit = 0;
-    for (long long x : a) if (x < f) deficit += f - x;
-    return deficit;
-}
-
-static bool feasibleC(const vector<long long>& a, long long f, long long c, long long deficit) {
-    if (c < f) return false;
-    long long surplus = 0;
-    for (long long x : a) if (x > c) surplus += x - c;
-    return surplus >= deficit;
-}
-
 int main() {
     int n;
     cin >> n;
+
     vector<long long> a(n);
-    long long total = 0, mx = 0;
+    long long total = 0, maxVal = 0;
+
     for (int i = 0; i < n; i++) {
         cin >> a[i];
         total += a[i];
-        mx = max(mx, a[i]);
+        maxVal = max(maxVal, a[i]);
     }
 
-    long long bestF = total / n;
-    long long deficit = deficitForF(a, bestF);
+    // Best possible f
+    long long f = total / n;
 
-    long long low = bestF, high = mx, bestC = bestF;
+    // Compute deficit
+    long long deficit = 0;
+    for (auto x : a)
+        if (x < f)
+            deficit += (f - x);
+
+    // Binary search for c
+    long long low = f, high = maxVal, ansC = f;
+
     while (low <= high) {
-        long long mid = low + (high - low) / 2;
-        if (feasibleC(a, bestF, mid, deficit)) {
-            bestC = mid;
-            low = mid + 1;
+        long long mid = (low + high) / 2;
+
+        long long surplus = 0;
+        for (auto x : a)
+            if (x > mid)
+                surplus += (x - mid);
+
+        if (surplus >= deficit) {
+            ansC = mid;        // feasible
+            low = mid + 1;     // try larger c
         } else {
             high = mid - 1;
         }
     }
 
-    cout << "Highest feasible f: " << bestF << "\n";
-    cout << "Largest feasible c for this f: " << bestC << "\n";
-    return 0;
+    cout << "Highest f: " << f << "\n";
+    cout << "Best c: " << ansC << "\n";
 }

@@ -12,7 +12,6 @@ Idea Used: Sort items by value-to-weight style ratio and take the most profitabl
 
 using namespace std;
 
-
 int main(){
 	int n;
 	cin >> n;

@@ -28,6 +28,7 @@ int main(){
 
 		arr.push_back(x);
 	}
+	
 //the count matrx for the frequency 
 	vector<int> ct(Mx+1, 0);
 	

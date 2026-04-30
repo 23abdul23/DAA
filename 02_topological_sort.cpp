@@ -17,6 +17,11 @@ int main(){
         indegree[v]++;
     }
 
+    for (int i = 0 ; i < n; i++){
+        if (!indegree[i])
+            q.push(i);
+    }
+
     while (!q.empty()){
         int node = q.front();
         q.pop();

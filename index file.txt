@@ -1,239 +1,60 @@
-01. 01_floyd_warshall.c
-Old name: q1.c
-Question: Floyd-Warshall algorithm for all-pairs shortest path
-
-02. 02_topological_sort.c
-Old name: q2(1).c
-Question: Topological sorting of a DAG
-
-03. 03_strassen_matrix_multiplication.cpp
-Old name: q1.cpp
-Question: Matrix multiplication using Strassen's algorithm
-
-04. 04_quick_sort.cpp
-Old name: q2.cpp
-Question: Quick Sort
-
-05. 05_merge_sort.cpp
-Old name: q3.cpp
-Question: Merge Sort
-
-06. 06_binomial_heap.c
-Old name: 1.c
-Question: Binomial heap with make-heap, insert, find-minimum, and union
-
-07. 07_fibonacci_heap.c
-Old name: 2.c
-Question: Fibonacci heap with make-heap, insert, find-minimum, and union
-
-08. 08_dynamic_array.c
-Old name: 3.c
-Question: Dynamic array using malloc/calloc and realloc
-
-09. 09_dynamic_array_alt.c
-Old name: 3(1).c
-Question: Dynamic array using malloc/calloc and realloc
-
-10. 10_counting_sort.cpp
-Old name: 3.cpp
-Question: Counting Sort
-
-11. 11_radix_sort.cpp
-Old name: 4.cpp
-Question: Radix Sort
-
-12. 12_lcs.cpp
-Old name: A (1).cpp
-Question: Longest Common Subsequence
-
-13. 13_lis.cpp
-Old name: B (1).cpp
-Question: Longest Increasing Subsequence
-
-14. 14_zero_one_knapsack.cpp
-Old name: A(1).cpp
-Question: 0/1 Knapsack
-
-15. 15_fractional_knapsack.cpp
-Old name: B(2).cpp
-Question: Fractional Knapsack
-
-16. 16_activity_selection.cpp
-Old name: C.cpp
-Question: Activity selection using greedy approach
-
-17. 17_coin_change_greedy.cpp
-Old name: C(3).cpp
-Question: Coin change using greedy approach
-
-18. 18_fibonacci_dp.cpp
-Old name: 1.cpp
-Question: nth Fibonacci number using dynamic programming
-
-19. 19_matrix_chain_multiplication.cpp
-Old name: 2.cpp
-Question: Matrix chain multiplication
-
-20. 20_max_flow_edmonds_karp.cpp
-Old name: A(2).cpp
-Question: Maximum flow using Ford-Fulkerson / Edmonds-Karp
-
-21. 21_bipartite_matching_max_flow.cpp
-Old name: B(4).cpp
-Question: Maximum bipartite matching using max flow
-
-22. 22_adjacency_matrix_to_list.c
-Old name: A.c
-Question: Convert weighted adjacency matrix to adjacency list
-
-23. 23_prim_mst.cpp
-Old name: B(1).cpp
-Question: Minimum spanning tree using Prim's algorithm
-
-24. 24_kruskal_mst.cpp
-Old name: C(2).cpp
-Question: Minimum spanning tree using Kruskal's algorithm
-
-25. 25_dijkstra.cpp
-Old name: A.cpp
-Question: Dijkstra's single source shortest path
-
-26. 26_bellman_ford.cpp
-Old name: B(3).cpp
-Question: Bellman-Ford single source shortest path with negative cycle detection
-
-27. 27_karatsuba_multiplication.cpp
-Old name: A(3).cpp
-Question: Integer multiplication using Karatsuba's algorithm
-
-28. 28_closest_pair_of_points.cpp
-Old name: B.cpp
-Question: Closest pair of points using divide and conquer
-
-29. 29_randomized_quick_sort.cpp
-Old name: C(1).cpp
-Question: Quick Sort using random pivot
-
-30. 30_min_heap.c
-Old name: Q1(1).c
-Question: Min-Heap with add, remove, heapify, and find minimum
-
-31. 31_heap_sort_min_heap.c
-Old name: Q2.c
-Question: Heap Sort using Min-Heap
-
-32. 32_max_heap_kth_min.c
-Old name: 3Q.c
-Question: Max-Heap and Kth minimum element
-
-33. 33_bucket_sort.c
-Old name: Q4.c
-Question: Bucket Sort
-
-34. 34_a1_q1_egg_drop_infinite.cpp
-Old name: New file
-Question: Assignment 1 Question 1 - Infinite building egg dropping with O(log h) strategy
-
-35. 35_a1_q2_min_length_subarray.cpp
-Old name: New file
-Question: Assignment 1 Question 2 - Minimum length subarray with sum at least S
-
-36. 36_a1_q3_median_two_sorted_arrays.cpp
-Old name: New file
-Question: Assignment 1 Question 3 - Median of two sorted arrays of size n
-
-37. 37_a1_q4_pair_sum.cpp
-Old name: New file
-Question: Assignment 1 Question 4 - Pair sum in O(n log n)
-
-38. 38_a1_q5_perfect_power.cpp
-Old name: New file
-Question: Assignment 1 Question 5 - Check whether a is of the form b^k
-
-39. 39_a1_q6_land_redistribution.cpp
-Old name: New file
-Question: Assignment 1 Question 6 - Land redistribution with feasible f and c
-
-40. 40_a1_q7_hidden_treasure_strategy.cpp
-Old name: New file
-Question: Assignment 1 Question 7 - Hidden treasure on number line with O(N) travel
-
-41. 41_a1_q9_max_profit_single_trade.cpp
-Old name: New file
-Question: Assignment 1 Question 9 - Maximum profit from one buy and one sell
-
-42. 42_a1_q10_celebrity.cpp
-Old name: New file
-Question: Assignment 1 Question 10 - Celebrity problem in O(n) queries
-
-43. 43_a2_q1_polynomial_evaluation.cpp
-Old name: New file
-Question: Assignment 2 Question 1 - Polynomial evaluation in O(n)
-
-44. 44_a2_q2_largest_bijection_subset.cpp
-Old name: New file
-Question: Assignment 2 Question 2 - Largest subset where f is one-one and onto
-
-45. 45_a2_q3_non_contained_intervals.cpp
-Old name: New file
-Question: Assignment 2 Question 3 - Count intervals not contained in any other
-
-46. 46_a2_q4_sum_of_products_k_subset.cpp
-Old name: New file
-Question: Assignment 2 Question 4 - Sum of products of all k-size subsets
-
-47. 47_a2_q5_non_dominated_points.cpp
-Old name: New file
-Question: Assignment 2 Question 5 - Non-dominated points in 2D
-
-48. 48_a2_q6_majority_fingerprint.cpp
-Old name: New file
-Question: Assignment 2 Question 6 - Majority fingerprints
-
-49. 49_a2_q7_significant_inversions.cpp
-Old name: New file
-Question: Assignment 2 Question 7 - Significant inversions in O(n log n)
-
-50. 50_a2_q8_visible_lines.cpp
-Old name: New file
-Question: Assignment 2 Question 8 - Visible lines from y = +infinity
-
-52. 52_a2_q11_fibonacci_log_n.cpp
-Old name: New file
-Question: Assignment 2 Question 11 - Fibonacci in O(log n)
-
-53. 53_a2_q12_local_minimum_binary_tree.cpp
-Old name: New file
-Question: Assignment 2 Question 12 - Local minimum in a complete binary tree
-
-54. 54_a2_q13_median_two_databases.cpp
-Old name: New file
-Question: Assignment 2 Question 13 - Median from two databases using kth-smallest queries
-
-55. 55_a3_q2_job_scheduling_release_deadlines.cpp
-Old name: New file
-Question: Assignment 3 Question 2 - Job scheduling with release times and deadlines
-
-56. 56_a3_q3_gas_station_refueling.cpp
-Old name: New file
-Question: Assignment 3 Question 3 - Gas station refueling strategy
-
-57. 57_a3_q4_minimum_unit_interval_cover.cpp
-Old name: New file
-Question: Assignment 3 Question 4 - Minimum unit interval cover
-
-58. 58_a3_q5_unbounded_knapsack.cpp
-Old name: New file
-Question: Assignment 3 Question 5 - Integer knapsack with duplicate items allowed
-
-59. 59_a3_q6_box_stacking.cpp
-Old name: New file
-Question: Assignment 3 Question 6 - Box stacking
-
-60. 60_a3_q7_optimal_coin_game.cpp
-Old name: New file
-Question: Assignment 3 Question 7 - Optimal strategy for a game
-
-61. 61_a3_q8_two_person_city_traversal.cpp
-Old name: New file
-Question: Assignment 3 Question 8 - Two-person traversal of cities
+01 --> Floyd-Warshall algorithm for all-pairs shortest path
+02 --> Topological sorting of a DAG
+03 --> Matrix multiplication using Strassen's algorithm
+04 --> Quick Sort
+05 --> Merge Sort
+06 --> Binomial heap
+07 --> Fibonacci heap
+08 --> Dynamic array
+09 --> Dynamic array
+10 --> Counting Sort
+11 --> Radix Sort
+12 --> Longest Common Subsequence
+13 --> Longest Increasing Subsequence
+14 --> 0/1 Knapsack
+15 --> Fractional Knapsack
+16 --> Activity selection
+17 --> Coin change (greedy)
+18 --> Fibonacci (DP)
+19 --> Matrix chain multiplication
+20 --> Maximum flow (Edmonds-Karp)
+21 --> Maximum bipartite matching
+22 --> Adjacency matrix to list
+23 --> Prim's MST
+24 --> Kruskal's MST
+25 --> Dijkstra
+26 --> Bellman-Ford
+27 --> Karatsuba multiplication
+28 --> Closest pair of points
+29 --> Randomized Quick Sort
+30 --> Min Heap
+31 --> Heap Sort
+32 --> Max Heap (Kth minimum)
+33 --> Bucket Sort
+34 --> Egg dropping (log h)
+35 --> Minimum length subarray ≥ S
+36 --> Median of two sorted arrays
+37 --> Pair sum
+38 --> Perfect power check
+39 --> Land redistribution
+40 --> Hidden treasure strategy
+41 --> Max profit (single trade)
+42 --> Celebrity problem
+43 --> Polynomial evaluation
+44 --> Largest bijection subset
+45 --> Non-contained intervals
+46 --> Sum of products of all k-size subsets
+47 --> Non-dominated points
+48 --> Majority fingerprints
+49 --> Significant inversions
+50 --> Visible lines
+52 --> Fibonacci (log n)
+53 --> Local minimum (binary tree)
+54 --> Median from two databases
+55 --> Job scheduling (release + deadlines)
+56 --> Gas station refueling
+57 --> Minimum unit interval cover
+58 --> Unbounded knapsack
+59 --> Box stacking
+60 --> Optimal coin game
+61 --> Two-person city traversal
